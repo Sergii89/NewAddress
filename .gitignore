@@ -1,0 +1,5 @@
+build/
+node_modules/
+raw/
+psd/
+Thumbs.db
