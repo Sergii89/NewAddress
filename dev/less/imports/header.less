@@ -1,5 +1,6 @@
 .header{
 	position: fixed;
+	z-index: 100;
 	width: 100%;
 	height: 75px;
 	box-sizing: border-box;
@@ -37,30 +38,35 @@
 	}
 	.nav{
 		padding-left: 98px;
+		margin-top: -17px;
 		font-size: 0;
 		display: none;
+		color: @whiteColor;
+		text-decoration: none;
+		font-family: @medium-fontFamily;
 		@media screen and(min-width: @full-width){
 			display: block;
+		}
+		li{
+			.inline-block;
 		}
 		&-item{
 			.inline-block;
 			padding: 0 30px;
 			line-height: 75px;
-			color: @whiteColor;
-			text-decoration: none;
-			font-family: @medium-fontFamill;
 			font-size: @button-fontSize;
 			&:before{
 				content: '';
-				.inline-block(middle)
+				.inline-block(middle);
+				position: relative;
+				left: -33px;
 				width: 6px;
 				height: 6px;
 				border-radius: 6px;
 				background-color: @whiteColor;
 			}
-			a{
-				display: block;
-				height: 100%;
+			&:hover{
+				background-color: rgba(0,0,0,0.5);
 			}
 		}
 
