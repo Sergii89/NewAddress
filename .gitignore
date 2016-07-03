@@ -1,4 +1,7 @@
 build/
+
 node_modules/
+
 raw/
+
 Thumbs.db
