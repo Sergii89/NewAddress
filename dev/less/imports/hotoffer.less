@@ -1,0 +1,75 @@
+.img-cover{
+	width: 100%/12*10;
+	margin: 0 auto;
+	@media screen and (min-width: @tablet-width){
+		width: 100%/12*3;
+		float: left;
+		margin: 0 20px 15px 0;
+	}
+	@media screen and (min-width: @full-width){
+		width: 100%;
+	}
+	img{
+		width: 100%;
+	}
+}
+.clear{
+	clear: both;
+	display: block;
+	margin-bottom: 40px;
+		@media screen and (min-width: @tablet-width){
+		margin-bottom: 24px;
+	}
+}
+.offer{
+	text-align: center;
+	padding-bottom: 15px;
+	@media screen and (min-width: @tablet-width){
+		text-align: left;
+	}
+	@media screen and (min-width: @full-width){
+	text-align: center;
+	}
+	&-header{
+		font-size: @companySlogan;
+		font-weight: bold;
+		padding: 15px 0 12px 0;
+			@media screen and (min-width: @tablet-width){
+			font-size: @companyDescr;
+			padding-top: 0;
+			}
+	}
+	&-square{
+		font-size: @button-fontSize;
+		padding-bottom: 12px;
+			@media screen and (min-width: @tablet-width){
+			font-size: 16px;
+			}
+	}
+	&-price{
+		font-size: @companySlogan;
+		font-weight: bold;
+			@media screen and (min-width: @tablet-width){
+			font-size: 30px;
+			}
+	}
+}
+.offer-text{
+	padding-bottom: 15px;
+	text-align: justify;
+	@media screen and (min-width: @full-width){
+		padding-botton: 22px;
+	}
+}
+.LookAll{
+	float: right;
+	font-size: @companyDescr;
+	color: #7eb6db;
+		@media screen and (min-width: @full-width){
+		font-size: @button-fontSize;
+		}
+		@media screen and (max-width: @tablet-width){
+		display: none;
+		}
+
+}
